@@ -59,10 +59,7 @@ const Book = {
 
  // 7th question
     
-function sum(num1,num2,){
-    var res;
-    res=num1+num2;
-return res;
+function sum(a, b){
+  console.log(a+b);
 }
-
-console.log(sum(3,3));
+sum(1.3);
