@@ -63,3 +63,18 @@ function sum(a, b){
   console.log(a+b);
 }
 sum(1.3);
+
+// 9th question
+   let a = 3
+   let b = 4
+   function divide(a, b){
+    try {
+        if (b ==0){
+            throw new Error("Division by zero)");
+        }
+        return a/b;
+    }catch (error){
+        console.log(error.message);
+    }
+   }
+     console .log(divide(a,b));
