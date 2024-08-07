@@ -1,0 +1,109 @@
+  function poem(){
+  console.log("Twinkle twinkle, little star");
+  console.log("How i wonder, what you are");
+}
+poem();
+
+function RollDice(){
+  let rand = Math.floor(Math.random() *6) +1;
+  console.log(rand);
+}
+RollDice();
+RollDice();
+RollDice();
+RollDice();
+
+// print a multiplication table
+
+function printTable(n){
+  for(let i=n; i<=n*10; i+=n){
+    console.log(i);
+  }
+
+}
+printTable(6);
+
+// return keyword in functions
+
+let age=22;
+function isAdult(age){
+  if(age >= 18) {
+    return "adult";
+  } else {
+    return "not adult";
+  }
+};
+
+// create a function that returns sum of numbers from 1 to n
+
+function getsum(n){
+    let sum = 0;
+   for (let i =1; i<=n; i++){
+   sum +=i;
+}
+    return i;
+ }
+
+    // practice question
+    
+    let greet = "Hello";
+
+    function ChangeGreet(){
+      let greet = "Namaste";
+      console.log(greet);
+      function innerGreet(){
+        console.log(greet);
+      }
+    }
+      console.log(greet);
+      ChangeGreet();
+
+      // Higher order functions
+
+      function multipleGreet(func, count){
+        for(let i =1; i<= Count; i++){
+             func();
+        }
+
+      }
+        let Greet = function(){
+          console.log("Hello")
+        }
+        multipleGreet (function(){console.log("Namaste")}, 1000);
+
+    //Methods
+
+    const calculator = {
+      num : 88,
+        add : function(a,b){
+          return a+b;
+        },
+         sub : function(a,b){
+          return a-b;
+        },
+          mul : function(a,b){
+          return a*b;
+        }
+    }
+    console.log(calculator.add);
+
+    // set time out function
+
+    console.log("Hi there");
+    setTimeout(()=>{
+      console.log("tu baccha hai")
+    },5000);
+
+    console.log("farhan tu");
+
+    // set interval function
+    
+    let id = setInterval(()=> {
+      console.log("Hi illu");
+    },3000)
+    console.log(id);
+
+    let id2 = setInterval(()=>{
+      console.log("how are you");
+    },4000)
+
